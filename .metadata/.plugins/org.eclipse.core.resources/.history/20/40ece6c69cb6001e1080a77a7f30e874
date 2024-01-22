@@ -1,0 +1,14 @@
+package ex02;
+
+public class ex123p {
+
+	public static void main(String[] args) {
+		int num 20;
+		
+		if (num > 20);
+		System.out.println("나이가 20보다 작습니다");
+		
+	}
+	System.out.println("성인입니다");
+
+}
