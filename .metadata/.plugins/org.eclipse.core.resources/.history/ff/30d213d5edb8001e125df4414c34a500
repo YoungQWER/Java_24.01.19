@@ -1,0 +1,29 @@
+package ex03;
+
+import java.util.Scanner;
+
+public class For05 {
+
+	public static void main(String[] args) {
+		System.out.println("----------------------");
+		System.out.println("1.예금|2.출금|3.잔고|4.종료");
+     	System.out.println("----------------------");
+		
+     	int i = 1;
+     	int m;
+     	
+     	while (i <= 4) {
+     	System.out.println("번호를 입력하세요");
+
+     	Scanner input = new Scanner(System.in);     	
+     	m = input.nextInt();    		
+     	
+     	if(m=1)
+     		System.out.println("선택>" + m);
+     		System.out.println("예금액>" + "10000");
+     		
+     	}
+
+	}
+
+}

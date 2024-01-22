@@ -1,0 +1,21 @@
+package ex03;
+
+public class For04 {
+
+	public static void main(String[] args) {
+		/*
+		 * 1문제
+		 * 
+		 * 1~100사이에
+		 * 홀수합과 짝수합을 구하시오
+		 * 
+		 * */
+		int n;
+		for( n = 1; n <= 100; n++) {
+			
+		}
+		System.out.println("홀수합 : " + n );
+		
+	}
+
+}
