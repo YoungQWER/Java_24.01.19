@@ -1,0 +1,24 @@
+package ex04;
+
+public class 로또 {
+
+	public static void main(String[] args) {
+
+		//1~45 숫자중에서 랜덤하게 6개 추출.......
+		
+		int[] Lotto = new int[6];
+		
+		for(int j=0; j<5; j++) {
+			for (int i=0; i<Lotto.length; i++) {
+				int num = (int)(Math.random()*45)+1;
+				Lotto[i] = num;
+			}
+			for(int i=0; i<Lotto.length; i++)
+				System.out.println(Lotto[i] + " ");
+
+		}
+			
+
+	}
+
+}

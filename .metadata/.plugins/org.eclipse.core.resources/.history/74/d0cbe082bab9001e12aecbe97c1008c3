@@ -33,7 +33,7 @@ System.out.println("\n--------------------------------------------");
 		avg = (double)total/arrNum.length;
 		System.out.println("총점 : " + total + ", 평균 : " + avg);
 
-System.out.println("\n--------------------------------------------");
+		System.out.println("\n--------------------------------------------");
 
 		//3. 최대값 구하기
 		int max = 0;
@@ -44,7 +44,6 @@ System.out.println("\n--------------------------------------------");
 			}
 		}
 		System.out.println("최대값 : " + max);
-		
 System.out.println("\n--------------------------------------------");
 
 		//정렬...
