@@ -1,0 +1,20 @@
+package ex04;
+
+public class 로또2 {
+
+	public static void main(String[] args) {
+         
+		//두개값을 변경
+		int a = 10;
+		int b = 20;
+		
+		System.out.println(a + " : " + b);
+
+        int c = a;
+        int a = b;
+	
+		System.out.println(a + " : " + b);
+
+	}
+
+}
