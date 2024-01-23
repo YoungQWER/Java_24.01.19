@@ -12,7 +12,7 @@ public class 예금잔액2 {
 		
 		Scanner sc = new Scanner(System.in);         //한번만
 		
-		for(;flag == true;) {
+		for(;flag == true;) {                        //계속 반복
 			System.out.println("-----------------------------");
 			System.out.println("1.예금\t|2.출금\t3.잔고\t4.종료");
 			System.out.println("-----------------------------");

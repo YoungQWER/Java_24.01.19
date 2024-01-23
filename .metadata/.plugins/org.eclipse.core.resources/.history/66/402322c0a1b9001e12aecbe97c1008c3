@@ -1,0 +1,21 @@
+package ex04;
+
+public class Array01 {
+
+	public static void main(String[] args) {
+		
+		//int형 배열
+		int sum;
+		int[] arrNum = new int[5];
+		
+		arrNum[0] = 10;
+		arrNum[1] = 20;
+		arrNum[2] = 30;
+		arrNum[3] = 40;
+		arrNum[4] = 50;
+		
+		System.out.println(arrNum[2]);
+		
+	}
+
+}
