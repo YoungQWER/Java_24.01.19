@@ -102,18 +102,17 @@ public class test01 {
 		int money = 2680;
 		System.out.println("money : " + money);
 		for(int i = 0; i<coinUnit.length; i++) {
-			int tmp = money/coinUnit[i];
-			System.out.println(coinUnit[i] + "원=" + tmp);	
-			money = money - tmp*coinUnit[i];
+			System.out.println(coinUnit[i] + "원: "+ money/coinUnit[i]);
+			money = money % coinUnit[i];
 		}
 */
-//12번
+//12번 
 		int[] answer = {1,4,4,3,1,4,4,2,1,3,2};
-		int[] counter = new int[4];
+		int[] counter = new int[4];               		// 1~4범위의 배열 생성
 		
 		for(int i=0; i<answer.length; i++) {
-			counter[answer[i]-1]++;
-		}
+			counter[answer[i]-1]++;                     //배열 하나씩 앞으로 {0,3,3,2,0,3,3,1,0,2,1} >> i++ 이니까 방에 1씩 {3,2,2,4}
+			}                                           // 0번방에 3, 1번방에 2, 3번방에 2, 4번방에 4
 		
 		for(int i=0; i<counter.length; i++) {
 			System.out.print(counter[i]);
@@ -121,7 +120,8 @@ public class test01 {
 			System.out.print("*");
 		}
 		System.out.println();
-	
+		
+
 		
 	}
 }
