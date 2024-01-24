@@ -15,8 +15,8 @@ public class 로또2 {
 
 			for(int i=0; i<10000; i++) {
 				int num = (int)(Math.random()*44)+1;  // 0~44에 +1 > 1~45				
-				int tmp = lotto[00];                   // 같은값이 있는지 확인
-				lotto[00] = lotto[num];
+				int tmp = lotto[0];                   // 같은 값이 있는지 확인
+				lotto[0] = lotto[num];
 				lotto[num] = tmp;
 			}
 			
@@ -28,3 +28,4 @@ public class 로또2 {
 		}
 	}
 }
+

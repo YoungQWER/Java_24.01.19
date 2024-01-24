@@ -28,11 +28,11 @@ public class ifelse05 {
 	    if(age < 4) {
 	    	System.out.println("버스요금은 : " + pay % pay + "입니다" );
 	    }else if(age < 14) {
-	    	System.out.println("버스요금은 : "+ pay / 2 + "입니다" );
+	    	System.out.println("버스요금은 : "+ pay / 4 + "입니다" );
 	    }else if(age < 20) {
-	    	System.out.println("버스요금은 : " + pay / 4 + "입니다" );
+	    	System.out.println("버스요금은 : " + pay / 2 + "입니다" );
 	    }else if(age < 65) {
-	    	System.out.println("버스요금은 : 1500원 입니다" );
+	    	System.out.println("버스요금은 : " + pay );
 	    }else if(age >= 65) {
 	    	System.out.println("버스요금은 : " + pay % pay + "입니다" );
 	    }

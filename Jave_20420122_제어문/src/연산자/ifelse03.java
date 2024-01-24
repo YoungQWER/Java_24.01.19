@@ -24,15 +24,15 @@ public class ifelse03 {
 		int max;
 		max = num1;
 		
-		if (max > num2) {
+		if(max > num2) {
 			if(num3 > max) {
+				max = num3;
+			}
+		}else {
+			if(num2 > num3) {
 				max = num2;
 			}else {
-					max = num3;
-					if(num2 > num3) {
-						max = num3;
-					}else {
-						max = num3;
+				max = num3;
 				}
 			}
 			
@@ -41,4 +41,4 @@ public class ifelse03 {
 		
 	}
 
-}
+

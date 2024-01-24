@@ -3,7 +3,7 @@ public class 삼항연산자1 {
 
 	public static void main(String[] args) {
 		
-		int jumsu = 90;
+		int jumsu = 60;
 /*		
 		if(jumsu >= 60)
 			System.out.println("합격");

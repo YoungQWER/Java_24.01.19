@@ -20,9 +20,8 @@ public class ifelse01 {
 			}else {
 				System.out.println("싫어요");
 			}	
-		}else if(num % 5 == 0) {
-			
-			
+		}
+		else if(num % 5 == 0) {		
 			if(num % 3 == 0) {             // 5의 배수인지 확인 후 3의 배수 확인
 		    	System.out.println("좋아요");				
 			}else {

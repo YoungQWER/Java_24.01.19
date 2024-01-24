@@ -8,7 +8,7 @@ public class for02 {
 		int sum = 0;
 		System.out.println("5개의 숫자를 입력하세요");
 		
-		for (int n = 1; n <=5; n++){
+		for (int n = 0; n <=4; n++){
 		Scanner input = new Scanner(System.in);
 		int num = input.nextInt();
 		sum += num;
