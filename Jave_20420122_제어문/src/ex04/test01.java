@@ -78,21 +78,25 @@ public class test01 {
 		
 		System.out.println("sum : " + sum);
 */
-/*10번
+/*//10번
 		int [] ballArr = {1,2,3,4,5,6,7,8,9};
 		int [] ball3 = new int[3];
 		
 		for(int i=0; i<ballArr.length; i++) {
 			int j = (int)(Math.random()*ballArr.length);
-		int tmp = 0;
-		tmp = ballArr[i];
-		ballArr[i] = ballArr[j];
-		ballArr[j] = tmp;
+			int tmp = 0;
+			tmp = ballArr[i];
+			ballArr[i] = ballArr[j];
+			ballArr[j] = tmp;
 		}
 		
-		for(int i=0; i<ballArr.length; i++)
-		System.out.println(ballArr[i]);
-*/
+		for(int i=0; i<ball3.length; i++)
+			ball3[i]=ballArr[i];
+		
+		for(int i=0; i<ball3.length; i++)
+			System.out.print(ball3[i]);
+*/			
+
 /*//11번   //큰 금액의 동전을 우선적으로 거슬러 줘야한다.
 		int[] coinUnit = {500, 100, 50, 10};
 		int money = 2680;
@@ -108,14 +112,16 @@ public class test01 {
 		int[] counter = new int[4];
 		
 		for(int i=0; i<answer.length; i++) {
-			//1
+			counter[answer[i]-1]++;
 		}
+		
 		for(int i=0; i<counter.length; i++) {
-			//2
+			System.out.print(counter[i]);
+			for (int j=0; j<counter[i]; j++)
+			System.out.print("*");
 		}
 		System.out.println();
+	
 		
-		
-		
-		}
+	}
 }
