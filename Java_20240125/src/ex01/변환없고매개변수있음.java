@@ -5,7 +5,7 @@ package ex01;
  * 반환 : void
  * 두 수 입력받아서 최대값 반환
  */
-public class 변환없고매개변수있음 {
+public class 변환없고매개변수있음 {                          //제일 많이 쓰인다
 
 	public static void main(String[] args) {
 		
@@ -14,7 +14,7 @@ public class 변환없고매개변수있음 {
 		System.out.println("프로그램 종료");
 	}
 
-	static void max(int n1, int n2) {                          
+	static void max(int n1, int n2) {                 //변환을 void로           
 		                                        		
 		int max = n1 > n2? n1 : n2;
 		

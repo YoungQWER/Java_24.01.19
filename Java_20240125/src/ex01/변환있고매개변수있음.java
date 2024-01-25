@@ -10,11 +10,11 @@ public class 변환있고매개변수있음 {
 	public static void main(String[] args) {
 		
 		System.out.println("최대값 출력");
-		int max = max(5, 10);
+		int max = max(5, 10);                 //반환이 int라서, int max =
 		System.out.println("최대값 : " + max);
 	}
 
-	static int max(int num1,int num2) {
+	static int max(int num1,int num2) {      
 		
 		if(num1 > num2)
 			return num1;

@@ -10,11 +10,11 @@ public class 변환없고매개변수없음 {
 	public static void main(String[] args) {
 		
 		System.out.println("최대값 출력");
-		max();                                   
+		max();                                   //반환을 void로 바꿔서 
 		System.out.println("프로그램 종료");
 	}
 
-	static void max() {                        
+	static void max() {                        //매개변수 없애고 안으로 값을 넣었을때
 		                                       
 		int num1 = 5;
 		int num2 = 20;
