@@ -46,11 +46,11 @@ System.out.println("\n--------------------------------------------");
 System.out.println("\n--------------------------------------------");
 
 
-		//정렬...
-		for(int i=0; i<arrNum.length-1; i++) {
+		//정렬...  작은수 >>> 큰수
+ 		for(int i=0; i<arrNum.length-1; i++) {
 			for(int j=i+1; j<arrNum.length; j++) {
 				int tmp;
-				if(arrNum[i]>arrNum[j]) {             //작은값을 i에 넣을때
+				if(arrNum[i]>arrNum[j]) {             //작은값을 i에 넣을때    ex) 컵2개의 내용물을 바꿀때 빈컵하나 더 필요하다
 					tmp = arrNum[i];                  //tmp에 i를 넣고
 					arrNum[i] = arrNum[j];            //i에 j를 넣고
 					arrNum[j] = tmp;                  //j에 i를 넣는다
