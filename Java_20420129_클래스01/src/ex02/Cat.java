@@ -17,7 +17,7 @@ public class Cat {
 	void setBreed(String s) {
 		breed = s;
 	}
-	void serColor(String c) {
+	void setColor(String c) {
 		color = c;
 	}
 	
