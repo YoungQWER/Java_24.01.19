@@ -18,9 +18,12 @@ public class SmartPhone extends Phone{
 		System.out.println("2.String color, boolean wifi");
 		this.wifi = wifi;
 	}
+	@Override//이노테이션 sendVoice는 상위클래스를 재정의한다.//오타방지
+	public void sendVoice(String message) {
+		System.out.println("음성메세지 : " + message);
+	}
 	
-	
-	@Override
+	@Override//이노테이션 sendVoice는 상위클래스를 재정의한다.//오타방지
 	public String toString() {
 		System.out.println(super.toString());  //상위클래스 toString 메소드 호출
 		return "4/SmartPhone [wifi=" + wifi + "]";
