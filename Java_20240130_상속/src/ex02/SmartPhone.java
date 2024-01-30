@@ -1,4 +1,4 @@
-package ex01;
+package ex02;
 
 public class SmartPhone extends Phone{
 	
@@ -12,6 +12,13 @@ public class SmartPhone extends Phone{
 		System.out.println("2/SmartPhone(boolean wifi)");
 		this.wifi = wifi;
 	}
+	
+	public SmartPhone(String model, String color, boolean wifi) {
+		super(model, color); //상위클래스 생성자 호출
+		System.out.println("2.String color, boolean wifi");
+		this.wifi = wifi;
+	}
+	
 	
 	@Override
 	public String toString() {

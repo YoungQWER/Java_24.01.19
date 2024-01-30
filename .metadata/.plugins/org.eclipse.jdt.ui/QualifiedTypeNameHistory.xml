@@ -10,4 +10,7 @@
     <fullyQualifiedTypeName name="java.awt.DisplayMode"/>
     <fullyQualifiedTypeName name="ex06.BookAccount"/>
     <fullyQualifiedTypeName name="Phone"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="javax.management.remote.SubjectDelegationPermission"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>
