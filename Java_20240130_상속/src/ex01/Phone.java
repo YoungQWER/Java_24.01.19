@@ -17,7 +17,7 @@ public class Phone {
 		
 	@Override
 	public String toString() {
-		return "3/Phone [model=" + model + ", color=" + color + "]";
+		return "Phone [model=" + model + ", color=" + color + "]";
 	}
 
 	public void bell() {
