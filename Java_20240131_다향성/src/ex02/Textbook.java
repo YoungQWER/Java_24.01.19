@@ -2,7 +2,8 @@ package ex02;
 
 public class Textbook extends Book{
 
-	public Textbook() {
+	public Textbook(String title, String author, int year) {
+		super(title, author, year);
 	}
 	
 	@Override
