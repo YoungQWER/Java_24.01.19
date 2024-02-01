@@ -14,7 +14,7 @@ public class FLACPlayer implements MediaPlayer{
 	
 	public static int state;                             //-1(정지), 0(일시정지), 1(재생)
 
-	
+	@Override
 	public void play() {
 		state = 1;                                 //재생
 		System.out.println("FLAC 파일 재생 중...");

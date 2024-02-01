@@ -11,20 +11,24 @@ public class MP3Player implements MediaPlayer{
 	private String name;
 	private double time;
 	private double size;
+	
+	public static int state;                             //-1(정지), 0(일시정지), 1(재생)
 
 	@Override
 	public void play() {
+		state = 1;                                 //재생
 		System.out.println("MP3 파일 재생 중...");
 	}
 	
 	@Override
 	public void pause() {
+		state = 0; 								  //일시정지
 		System.out.println("재생을 일시 정지");
 	}
 	
 	@Override
 	public void stop(){
-		System.out.println("재생을 정지");
+		state = -1;								  //정지
 	}
 	
 	@Override

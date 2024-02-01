@@ -6,11 +6,11 @@ public class MediaPlayerController {
 	
 	public static void main(String[] args) {
 				
-		MediaPlayer player = new FLACPlayer();
+		MediaPlayer player = new MP3Player();
 		
 		Scanner sc = new Scanner(System.in);
 		
-		while(FLACPlayer.state != -1) {
+		while(MP3Player.state != -1) {
 			System.out.println("1 : 플레이 실행, 0 : 일시정지, -1 : 정지 ==>");
 		switch(sc.nextInt()) {
 		case 1:
