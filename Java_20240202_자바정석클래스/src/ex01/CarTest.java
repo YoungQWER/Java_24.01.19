@@ -9,7 +9,7 @@ class Car{
 		this("white", "auto", 4);
 	}
 	
-	Car(Car c) {               //인스턴스이 복사를 위한 생성자
+	Car(Car c) {               //인스턴스의 복사를 위한 생성자
 		color = c.color;
 		gearType = c.gearType;
 		door = c.door;
