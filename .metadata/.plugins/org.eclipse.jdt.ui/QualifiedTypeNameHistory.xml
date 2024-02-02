@@ -5,7 +5,6 @@
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.StyledTextAction"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="ex06.BookAccount"/>
     <fullyQualifiedTypeName name="Phone"/>
     <fullyQualifiedTypeName name="javax.management.remote.SubjectDelegationPermission"/>
@@ -13,5 +12,16 @@
     <fullyQualifiedTypeName name="java.awt.DisplayMode"/>
     <fullyQualifiedTypeName name="ex02.Animal"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="ex01.Speaker"/>
+    <fullyQualifiedTypeName name="ex01.Computer"/>
+    <fullyQualifiedTypeName name="exo1.RemoteControl"/>
+    <fullyQualifiedTypeName name="java.awt.TextArea"/>
+    <fullyQualifiedTypeName name="ex01.RemoteControl"/>
+    <fullyQualifiedTypeName name="ex03.MP3Player"/>
+    <fullyQualifiedTypeName name="ex03.FLACPlayer"/>
+    <fullyQualifiedTypeName name="ex03.MediaPlayer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.awt.Desktop.Action"/>
+    <fullyQualifiedTypeName name="ex04.C"/>
 </qualifiedTypeNameHistroy>
