@@ -12,28 +12,28 @@ public class Arr {
 		System.out.println("sum="+sumArr(arr)); //배열의 총합을 출력		
 }
 	
-static void printArr(int[] arr) {  //배열의 모든 요소를 출력
-	System.out.print("[");
+	static void printArr(int[] arr) {  //배열의 모든 요소를 출력
+		System.out.print("[");
+		
+		for(int i : arr)              //향상된 for문
+			System.out.print(i+",");
+		System.out.println("]");
+	}
 	
-	for(int i : arr)              //향상된 for문
-		System.out.print(i+",");
-	System.out.println("]");
-}
-
-static int sumArr(int[] arr) {    //배열의 모든 요소의 합을 반환
-	int sum = 0;
-	
-	for(int i=0; i<arr.length; i++)
-		sum += arr[i];
-	return sum;
-}
-static void sortArr(int[] arr) {             //배열을 오름차순으로 정렬
-	for(int i=0; i<arr.length; i++)          //배열의 총 길이 수 만큼 반복
-		for(int j=0; j<arr.length-1-i;j++)   //가장 작은 수를 맨 뒤로 밀면서 반복, 수행횟수 -1
-			if(arr[j] > arr[j+1]) {          //앞수와 뒷수 비교
-				int tmp = arr[j];            //낮은 수를 tmp로 넣고
-				arr[j] = arr[j+1];           //높은 수는 앞수로 교체
-				arr[j+1] = tmp;              //낮은 수는 뒷수로 교체하여, 반복될때마다 낮은수가 뒤로 밀림
+	static int sumArr(int[] arr) {    //배열의 모든 요소의 합을 반환
+		int sum = 0;
+		
+		for(int i=0; i<arr.length; i++)
+			sum += arr[i];
+		return sum;
+	}
+	static void sortArr(int[] arr) {             //배열을 오름차순으로 정렬
+		for(int i=0; i<arr.length; i++)          //배열의 총 길이 수 만큼 반복
+			for(int j=0; j<arr.length-1-i;j++)   //가장 작은 수를 맨 뒤로 밀면서 반복, 수행횟수 -1
+				if(arr[j] > arr[j+1]) {          //앞수와 뒷수 비교
+					int tmp = arr[j];            //낮은 수를 tmp로 넣고
+					arr[j] = arr[j+1];           //높은 수는 앞수로 교체
+					arr[j+1] = tmp;              //낮은 수는 뒷수로 교체하여, 반복될때마다 낮은수가 뒤로 밀림
 			}
 		}  //sortArr(int[] arr)
 

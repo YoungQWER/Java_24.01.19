@@ -24,4 +24,11 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.awt.Desktop.Action"/>
     <fullyQualifiedTypeName name="ex04.C"/>
+    <fullyQualifiedTypeName name="ex01.TV"/>
+    <fullyQualifiedTypeName name="ex03.Computer"/>
+    <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="ex03.Product"/>
+    <fullyQualifiedTypeName name="ex04.Computer"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
 </qualifiedTypeNameHistroy>
