@@ -12,11 +12,3 @@ public class EqualEx01 {
 	}
 
 }
-
-
-class Box{
-	String str;
-	public Box(String str) {
-		this.str = str;
-	}
-}
