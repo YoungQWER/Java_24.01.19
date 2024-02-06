@@ -16,13 +16,13 @@ public class Exception01 {
 			int num1 = sc.nextInt();
 			int num2 = sc.nextInt();
 		
-			div = num1 / num2;               	//여기까지 잘못된 값이 들어올때
+			div = num1 / num2;               	//여기까지 잘못된 값이 들어올때 (문자, 실수)
 		}catch(InputMismatchException e) {      //알파벳
 			e.printStackTrace();
-		}catch(ArithmeticException e) {			//제로
+		}catch(ArithmeticException e) {			//0으로 나누기 했을 때 처리
 			e.printStackTrace();
 		}catch(Exception e) {                   //최상위 이것만 넣어도 되는데 상위 있는것들은 세부적으로 적을수있다
-			e.printStackTrace();
+			e.printStackTrace();									//거르는게 많으면 많을수록 좋다
 		}finally{
 			//여기는 예외가 발생하든 발생하지 않든 무조건 처리하는 구문
 		}
