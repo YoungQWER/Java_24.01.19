@@ -19,7 +19,6 @@
     <fullyQualifiedTypeName name="ex03.MP3Player"/>
     <fullyQualifiedTypeName name="ex03.FLACPlayer"/>
     <fullyQualifiedTypeName name="ex03.MediaPlayer"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.awt.Desktop.Action"/>
     <fullyQualifiedTypeName name="ex04.C"/>
     <fullyQualifiedTypeName name="ex01.TV"/>
@@ -39,4 +38,7 @@
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="ex01.OrangeBox"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
 </qualifiedTypeNameHistroy>
