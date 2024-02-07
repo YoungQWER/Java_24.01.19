@@ -5,7 +5,7 @@ class A{
 		System.out.println("funA");
 	}
 	void funD() {
-		System.out.println("A-funD");
+		System.out.println("A-funD");     //재정의
 	}
 }
 class B extends A{
@@ -51,7 +51,9 @@ public class Exam01 {
 	
 	public static void main(String[] args) {
 		
-		//상위클래스는 하위클래스 참조가능
+		//강제형변환 하위가 상위 값
+		
+		//상위클래스는 하위클래스 참조가능  
 		//하위클래스는 상위클래스 참조불가
 		
 		//상위클래스는 하위클래스 자원 접근 불가
