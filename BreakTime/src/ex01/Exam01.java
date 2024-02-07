@@ -4,41 +4,60 @@ class A{
 	void funA() {
 		System.out.println("funA");
 	}
+	void funD() {
+		System.out.println("A-funD");
+	}
 }
 class B extends A{
 	void funB() {
 		System.out.println("funB");
+	}
+	void funD() {
+		System.out.println("B-funD");
 	}
 }
 class C extends B{
 	void funC() {
 		System.out.println("funC");
 	}
+	void funD() {
+		System.out.println("C-funD");
+	}
 }
 
 public class Exam01 {
 	
-	//                  A객체, B객체, C객체 가능
+//	                     A객체, B객체, C객체 가능
 	static void testFunc(A a) {
 		//funA, funB, funC를 출력하려면 어떻게 해야되나??
 		
-		if(a instanceof C) {                 //a가 C클래스에 포함되있나?             //testFunc(new C()); 출력
-//			((C)a).funC();                   //true면 출력, false면 패스
+		if(a instanceof C) {                 //a가 C클래스에 포함되있나?	//true면 출력, false면 패스
+//			((C)a).funC();                   
 			C c = (C)a;                      
-			c.funC();                        //C클래스에 funC을 넣는다
+			c.funC();                        //C클래스가 true라서 funC출력
 	}
-		// C클래스 안에 a를 출력
-		else if(a instanceof B) {            //a가 B클래스에 속해있으면              //testFunc(new B()); 출력
+		
+		else if(a instanceof B) {            //a가 B클래스에 포함되있나?	
 //			((B)a).funB();				     
 			B b = (B)a;
-			b.funB();                        //B클래스에 funB를 넣는다
+			b.funB();                        //B클래스가 true라서 funB출력
 		}
-		else
-			a.funA();                                                         //testFunc(new A()); 출력
+		else 
+			a.funA();                        //A클래스가 전부false라 funA출력
 		
+		a.funD();
+		System.out.println("---------------------------------");
 	}
 	
 	public static void main(String[] args) {
+		
+		//상위클래스는 하위클래스 참조가능
+		//하위클래스는 상위클래스 참조불가
+		
+		//상위클래스는 하위클래스 자원 접근 불가
+		//하위클래스는 상위클래스 자원 접근 가능
+		//단, 하위클래스가 상위클래스 자원(메소드)을 재정의하면 그 때는 가능
+		
 		
 		//상위 클래스는 하위 클래스 참조가능
 		A a1 = new A();

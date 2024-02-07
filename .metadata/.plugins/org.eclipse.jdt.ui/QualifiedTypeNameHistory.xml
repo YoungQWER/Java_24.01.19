@@ -41,4 +41,5 @@
     <fullyQualifiedTypeName name="ex01.OrangeBox"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
 </qualifiedTypeNameHistroy>
