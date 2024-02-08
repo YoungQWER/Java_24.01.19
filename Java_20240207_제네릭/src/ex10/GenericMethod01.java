@@ -13,7 +13,7 @@ class Box<T>{     //T --> String           //Box<Integer> 안에 obj, set(), get
 }
 
 class BoxFactory{
-	public static <T extends Number> Box<T> makeBox(T o) {       //Box<integer> 100을 넣은 주소값을 가져온다.
+	public static <T extends Number> Box<T> makeBox(T o) {      
 		Box<T> box = new Box();
 		box.set(o);
 		
@@ -23,8 +23,8 @@ class BoxFactory{
 }
 
 class Unboxer{
-	public static <T extends Number> T openBox(Box<T> box) {
-		System.out.println("unboxed : "+ box.get().intValue());
+	public static <T extends Number> T openBox(Box<T> box) {               //openBox 주소를 가져온다.
+		System.out.println("unboxed : "+ box.get().intValue());            //openBox 안에 값을 출력
 		return box.get();
 	}
 }
@@ -34,9 +34,9 @@ public class GenericMethod01 {
 
 	public static void main(String[] args) {
 		
-		Box<Integer> ibox = BoxFactory.makeBox(new Integer(100));          //박스팩토리
+		Box<Integer> ibox = BoxFactory.makeBox(new Integer(100));          //Box<integer> 100을 넣은 주소값을 가져온다.
 		
-		int num = Unboxer.openBox(ibox);                                   //언박스
+		int num = Unboxer.openBox(ibox);                                   //Box<integer> 안에 값을 num에 넣어서 출력
 		System.out.println("data : "+ num);
 	}
 }
