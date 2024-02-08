@@ -6,7 +6,7 @@ class Box<T>{         //Box<Integer> 안에 obj, set(), get()이 들어가있다
 	void set(T obj) {this.obj = obj;}
 	T get() {return this.obj;}
 	
-	@Override
+	@Override                          //오버라이딩이 없으면 주소값이 나온다
 	public String toString() {
 		return obj.toString();
 	}
