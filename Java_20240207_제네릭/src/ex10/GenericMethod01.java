@@ -17,14 +17,14 @@ class BoxFactory{
 		Box<T> box = new Box();
 		box.set(o);
 		
-		System.out.println("Boxed : "+ o.intValue());
+		System.out.println("Boxed : "+ o.doubleValue());
 		return box;
 	}
 }
 
 class Unboxer{
 	public static <T extends Number> T openBox(Box<T> box) {               //openBox 주소를 가져온다.
-		System.out.println("unboxed : "+ box.get().intValue());            //openBox 안에 값을 출력
+		System.out.println("unboxed : "+ box.get().doubleValue());            //openBox 안에 값을 출력
 		return box.get();
 	}
 }
@@ -34,9 +34,9 @@ public class GenericMethod01 {
 
 	public static void main(String[] args) {
 		
-		Box<Integer> ibox = BoxFactory.makeBox(new Integer(100));          //Box<integer> 100을 넣은 주소값을 가져온다.
+		Box<Double> ibox = BoxFactory.makeBox(10.2);          //Box<integer> 100을 넣은 주소값을 가져온다.
 		
-		int num = Unboxer.openBox(ibox);                                   //Box<integer> 안에 값을 num에 넣어서 출력
+		double num = Unboxer.openBox(ibox);                                   //Box<integer> 안에 값을 num에 넣어서 출력
 		System.out.println("data : "+ num);
 	}
 }

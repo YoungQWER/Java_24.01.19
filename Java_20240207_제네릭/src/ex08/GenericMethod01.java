@@ -22,6 +22,16 @@ class BoxFactory{
 	}
 }
 
+/*
+ * Box<String> sBox = BoxFactory.makeBox("korea");  ==>이문장이 전달되면
+ * 대략 이렇게 생성
+ * 
+ * public static <T> Box<String> makeBox(String o){
+ * 		Box<String> box = new Box<String>();
+ * 		box set(o);
+ * 		return box;
+ */
+
 public class GenericMethod01 {
 
 	public static void main(String[] args) {

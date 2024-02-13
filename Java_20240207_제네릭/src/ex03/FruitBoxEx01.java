@@ -36,18 +36,17 @@ public class FruitBoxEx01 {
 		Box <Orange> bbox = new Box();	//오렌지 박스
 		
 		abox.setObj(new Apple());	//사과 담음
-		bbox.setObj(new Orange());	//오렌지 담음
-		
-		Apple ap = abox.getObj();    //강제 형변환
-		Orange op = bbox.getObj();
-		
-		System.out.println(ap);
-		System.out.println(op);
-		
+		bbox.setObj(new Orange());	//오렌지 담음		
 //		abox.setObj(10);
 //		abox.setObj(1.2);
 //		abox.setObj("String");
 		
+		
+		Apple ap = abox.getObj();    //강제 형변환
+		Orange op = bbox.getObj();
+		System.out.println(ap);
+		System.out.println(op);
+
 		Box<Integer> cbox = new Box();
 		cbox.setObj(100);
 	}
