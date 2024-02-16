@@ -1,5 +1,7 @@
 package movie;
 
+import java.util.ArrayList;
+
 public class AdminMenu extends AbstractMenu{
 
 	private static final AdminMenu instance = new AdminMenu(null);
@@ -22,9 +24,22 @@ public class AdminMenu extends AbstractMenu{
 	@Override
 	public Menu next() {
 		switch(sc.nextLine()) {
+		case "2" :
+			printAllMovies();        //영화 목록 출력
+			return this;      //adminMenu(관리자) 반환
 		case "b" : return prevMenu;  //b입력하면, 이전 메뉴 반환
 		default : return this;       //객체 자기 자신(AdminMenu) ==> new AdminMenu(null);
 		}
+	}
+
+	private void printAllMovies() {
+		
+		ArrayList<Movie> movies = Movie.findAll();   //모든 영화를 가져옴(Movie)
+		
+		for(Movie movie : movies) {
+			System.out.println(movie);
+		}
+		
 	}
 	
 }
