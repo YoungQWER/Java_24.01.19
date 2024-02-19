@@ -30,11 +30,23 @@ public class AdminMenu extends AbstractMenu{
 		case "2" :
 			printAllMovies();        //영화 목록 출력
 			return this;      //adminMenu(관리자) 반환
+		case "3" :
+			deleteMovie();
+			return this;
 		case "b" : return prevMenu;  //b 입력하면, 이전 메뉴 반환
 		default : return this;       //객체 자기 자신(AdminMenu) ==> new AdminMenu(null);
 		}
 	}
 	
+	private void deleteMovie() {
+		printAllMovies();         //전체 목록 출력한다.
+		
+		System.out.println("삭제할 영화를 ID값을 입력하세요: ");
+		
+			Movie.delete(sc.nextLine());
+			System.out.println(">> 삭제되었습니다.");
+	}
+
 	private void createMovie() {
 		
 		System.out.println("제목");
@@ -45,12 +57,9 @@ public class AdminMenu extends AbstractMenu{
 		
 		Movie moive = new Movie(title, genre);
 		
-		try {
 			moive.save();
 			System.out.println(">> 저장되었습니다.");
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
+
 	}
 
 	private void printAllMovies() {
