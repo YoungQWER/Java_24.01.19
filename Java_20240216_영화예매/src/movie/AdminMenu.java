@@ -24,11 +24,32 @@ public class AdminMenu extends AbstractMenu{
 	@Override
 	public Menu next() {
 		switch(sc.nextLine()) {
+		case "1" :
+			createMovie();    //영화 등록 진행
+			return this;
 		case "2" :
 			printAllMovies();        //영화 목록 출력
 			return this;      //adminMenu(관리자) 반환
-		case "b" : return prevMenu;  //b입력하면, 이전 메뉴 반환
+		case "b" : return prevMenu;  //b 입력하면, 이전 메뉴 반환
 		default : return this;       //객체 자기 자신(AdminMenu) ==> new AdminMenu(null);
+		}
+	}
+	
+	private void createMovie() {
+		
+		System.out.println("제목");
+		String title = sc.nextLine();    //제목 입력
+		
+		System.out.println("장르");       //장르 입력
+		String genre = sc.nextLine();
+		
+		Movie moive = new Movie(title, genre);
+		
+		try {
+			moive.save();
+			System.out.println(">> 저장되었습니다.");
+		}catch(Exception e) {
+			e.printStackTrace();
 		}
 	}
 
