@@ -7,13 +7,14 @@ public class MainApp {
 		System.out.println("프로그램을 시작합니다!");
 		
 		Menu menu = MainMenu.getInstance();
-
+		
 		while(menu != null) {
 			menu.print();
 			menu = menu.next();
-
 		}
-		System.out.println("프로그램을 종료합니다.");
+		
+		System.out.println("프로그램을 종료됩니다.");
+		
 	}
 
 }
