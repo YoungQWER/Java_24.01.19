@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="ex14.Unboxer"/>
     <fullyQualifiedTypeName name="ex15.Fruit"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="java.time.Instant"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="ex01.Calculate"/>
 </qualifiedTypeNameHistroy>
